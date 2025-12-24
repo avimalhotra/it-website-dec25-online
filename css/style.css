@@ -24,6 +24,7 @@ body{font: 16px/normal "Poppins", sans-serif;}
 .justify-between{ justify-content: space-between;}
 .justify-center{ justify-content: center;}
 .justify-right{ justify-content: right;}
+.img-resp{ max-width: 100%; height: auto;}
 
 /* grid */
 .row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;}
@@ -40,8 +41,17 @@ body{font: 16px/normal "Poppins", sans-serif;}
 .col-12{ grid-column: span 12;}
 
 /* custom css */
-.wrap-1{ background: var(--blue); color: var(--white); padding: 5rem 0;}
+.wrap-1{ background: url(../img/banner-bg.svg) no-repeat center/cover var(--blue); color: var(--white); padding-bottom: 84px;}
+header{ padding: 58px 0 61px; }
+.wrap-1 a{ color: inherit; display: inline-block;}
+.wrap-1 nav ul{ list-style: none; padding: 0; gap: 3rem;}
+.wrap-1 nav a{ font-size: 14px; font-weight: 600; }
+.menu{ background: none; border: 1px solid; color: var(--white); display: none; font-size: 20px; padding: 5px 10px;}
 
+.banner .caption{ font-size: 28px; font-weight: 600; }
+.banner .para{ line-height: 1.7; margin: 3rem 0 4rem; }
+.banner :is(.caption,.para){ margin-right: 100px;}
+.banner a{ display: inline-block; width: 185px; line-height: 50px; background: var(--white); color: var(--black); border-radius: 5px; text-align: center; font-weight: 600; }
 
 .wrap-2{ background: var(--white); color: var(--black); padding: 5rem 0;}
 
@@ -51,7 +61,8 @@ body{font: 16px/normal "Poppins", sans-serif;}
 
 /* responsive */
 @media screen and (max-width:1280px){
-     
+     .wrap-1 nav ul{ gap: 2rem;}
+     .banner :is(.caption,.para){ margin-right: 0px;}
 }
 
 @media screen and (max-width:980px){
@@ -69,7 +80,11 @@ body{font: 16px/normal "Poppins", sans-serif;}
 }
 
 @media screen and (max-width:767px){         /* phone landscape */
-     
+.col-m-6{ grid-column: span 6;}
+.col-m-12{ grid-column: span 12;}
+nav{ display: none;}
+.menu{ display: inline-block;}
+.order-m-before{order: -1;}
 }
 
 @media screen and (max-width:460px){
@@ -84,4 +99,5 @@ body{font: 16px/normal "Poppins", sans-serif;}
 .col-p-9{ grid-column: span 9;}
 .col-p-10{ grid-column: span 10;}
 .col-p-12{ grid-column: span 12;}  
+h1{ font-size: 30px;}
 }
