@@ -13,6 +13,7 @@ html{
      --gray:#92989F;
      --black:#000;
      --blackop:#0009;
+     --whiteop:#fff9;
 }
 
 body{font: 16px/normal "Poppins", sans-serif;}
@@ -25,6 +26,7 @@ body{font: 16px/normal "Poppins", sans-serif;}
 .justify-center{ justify-content: center;}
 .justify-right{ justify-content: right;}
 .img-resp{ max-width: 100%; height: auto;}
+.text-center{text-align: center;}
 
 /* grid */
 .row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;}
@@ -53,7 +55,25 @@ header{ padding: 58px 0 61px; }
 .banner :is(.caption,.para){ margin-right: 100px;}
 .banner a{ display: inline-block; width: 185px; line-height: 50px; background: var(--white); color: var(--black); border-radius: 5px; text-align: center; font-weight: 600; }
 
-.wrap-2{ background: var(--white); color: var(--black); padding: 5rem 0;}
+
+
+.wrap-2{ background: var(--white); color: var(--black); padding: 10rem 0;}
+.wrap-2 h2{ font-size: 20px; font-weight: 500; color: var(--blue);}
+.wrap-2 h2+p{ font-size: 28px; font-weight: 700; color: var(--black); margin: 1rem 0 4rem;}
+.service{ padding: 45px 60px 40px 30px; border-radius: 5px; box-shadow: 0 0 13px #0000001a; position: relative;}
+.service h3{ font-size: 20px; font-weight: 600; }
+.service p{ font-size: 14px; color: var(--blue); margin: 20px 0 30px; }
+.service a{ font-size: 14px; color: inherit;}
+.services .col-3:nth-child(1) section::before{ content: ''; position: absolute; background: var(--blue); height: 15px; left: 0; right: 0; top: 0; border-radius: 5px 5px 0 0; }
+.services .col-3:nth-child(2) section{ background: var(--blue); color: var(--white);}
+.services .col-3:nth-child(2) section p{ color: var(--whiteop);}
+
+.info{ margin: 10rem 0; }
+.info-block{ padding: 21.5px 0;}
+.info-block p{ font-size: 14px; font-weight: 500;}
+.info-block p b{ font-size: 24px; font-weight: 600;}
+.work{ margin: 10rem 0; }
+.projects{ margin: 10rem 0; }
 
 
 .wrap-3{ background: var(--blue); color: var(--white); padding: 5rem 0;}
@@ -63,6 +83,7 @@ header{ padding: 58px 0 61px; }
 @media screen and (max-width:1280px){
      .wrap-1 nav ul{ gap: 2rem;}
      .banner :is(.caption,.para){ margin-right: 0px;}
+     .service{ padding: 45px 15px 40px 15px;}
 }
 
 @media screen and (max-width:980px){
