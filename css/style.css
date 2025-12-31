@@ -107,9 +107,21 @@ header{ padding: 58px 0 61px; }
 .project-details p:nth-child(3){ margin-bottom: 30px;}
 .project-details a{ display: inline-block; margin-top: 30px; background: var(--blue); width: 214px; line-height: 51px; color: var(--white); text-align: center; border-radius: 5px; }
 
+.team{ text-align: center; }
+.team-member{ box-shadow: 0 0 18px #0000001a; padding: 10px 10px 65px 10px;}
+.team-member h3{ margin: 20px 0 5px; font-size: 24px; font-weight: 600;}
+.team-member small{ font-size: 16px;}
+.team-member ul{ list-style: none; padding: 0; gap: 50px; margin-top: 40px;}
+.team-member ul a{ display: block; width: 50px; line-height: 46px; border-radius: 50%; border:2px solid; color: var(--blue);}
 
 
-.wrap-3{ background: var(--blue); color: var(--white); padding: 5rem 0;}
+
+.wrap-3{ background: var(--blue); color: var(--white); }
+.f-top{ padding: 60px 0 40px;}
+.f-top h3{ color: #92989F; font-weight: 600; font-size: 18px; margin-bottom: 23px;}
+.f-top ul{ list-style: none; padding: 0;}
+.f-top a{ color: #fff; display: inline-block; line-height: 40px;}
+.f-bottom{ color: var(--gray); padding-bottom: 60px;}
 
 
 /* responsive */
@@ -135,6 +147,7 @@ header{ padding: 58px 0 61px; }
 .col-t-12{ grid-column: span 12;} 
 .accordion a.vert{line-height: 40px;}
 .review-shadow{ padding: 60px 10px 0;}
+.team-member ul{gap: 20px;}
 }
 
 @media screen and (max-width:767px){         /* phone landscape */
@@ -144,6 +157,7 @@ nav{ display: none;}
 .menu{ display: inline-block;}
 .order-m-before{order: -1;}
 .accordion a.vert{height: 100%;}
+.work-image img{ width: 200px; height: auto; }
 }
 
 @media screen and (max-width:460px){
